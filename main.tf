@@ -1,9 +1,7 @@
 provider "aws" {
-  version = "~> 2.0"
+  version = "2.33.0"
 
   region = var.aws_region
-  access_key = "$access_key"
-  secret_key = "$secret_key"
 }
 
 resource "aws_dynamodb_table" "tfc_example_table" {
